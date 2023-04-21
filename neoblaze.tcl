@@ -32,4 +32,20 @@ proc my_jokes {nick uhost handle channel arg} {
   putquick "PRIVMSG $channel :$rand_line"
 }
 
-puts "interdome neoblaze insults lol"
+bind pub - "!srs" poem_srs
+
+proc poem_srs {nick uhost hand chan text} {
+    # Define the poem as a string
+    set poem "Neoblaze, oh Neoblaze,\nSo serious and bold.\nNever one to take a break,\nAlways focused, never cold.\n\nWith eyes that pierce like fire,\nAnd a mind like steel,\nNeoblaze commands respect,\nAnd is always ready to deal.\n\nBut sometimes we wonder,\nIf there's a lighter side,\nA smile or a chuckle,\nThat Neoblaze might try to hide.\n\nSo come on, Neoblaze,\nLet your hair down and relax,\nWe promise we won't judge you,\nFor enjoying a little lax."
+
+    # Split the poem into lines
+    set lines [split $poem "\n"]
+
+    # Send each line of the poem to the channel with a delay between each line
+    foreach line $lines {
+        putquick "PRIVMSG $chan :$line"
+        after 500
+    }
+}
+
+puts "interdome's neoblaze insults lol"
