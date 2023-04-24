@@ -5,12 +5,13 @@ bind pub - "!reqddos" reqddos
 proc reqddos {nick uhost handle channel arg} {
     unbind pub - "!reqddos" reqddos
     if {![string length [set v [lindex $arg 0]]]} { set v $nick ; set nick $::botnick }
+	putserv "privmsg $channel :\00309brb, pming this faggots fate, \037lold!"
     switch -- [rand 25] {
-      1 { putserv "privmsg $channel :\00309brb, pming this faggots fate, \037lold!" }
-      2 { putserv "privmsg $channel :\00309kek loading my ciscos!" }
-      3 { putserv "privmsg $channel :\00309this dude is gonna be so pissed, loading boats.." }
-      4 { putserv "privmsg $channel :\00309lool, this mf is gonna get it good.." }
-      5 { putserv "privmsg $channel :\00309omfg, rox the box..loading up my ion cannon" }
+      1 { putserv "privmsg $channel :\00311H\00310A\00312C\00309K\00310E\00311R\00312 \00309W\00310A\00311R\00312N\00310I\00311N\00312G\00311:\00312 \00309Y\00310o\00311u\00312r\00309 \00310s\00311y\00312s\00309t\00310e\00311m\00312 \00309h\00310a\00311s\00312 \00310b\00311e\00312e\00309n\00310 \00311c\00312o\00309m\00310p\00311r\00312o\00309m\00310i\00311s\00312e\00309d\00311!\00312" }
+      2 { putserv "privmsg $channel :\00312A\00311L\00310A\00309R\00311M\00312:\00309 \00311Y\00310o\00311u\00312r\00311 \00309n\00310e\00311t\00312w\00311o\00310r\00311k\00312 \00309h\00310a\00311s\00312 \00310b\00311e\00312e\00309n\00310 \00311c\00312o\00309m\00310p\00311r\00312o\00309m\00310i\00311s\00312e\00309d\00310!\00311" }
+      3 { putserv "privmsg $channel :\00311C\00310A\00312U\00309T\00310I\00311O\00312N\00311:\00312 \00309Y\00310o\00311u\00312r\00309 \00310d\00311a\00312t\00309a\00310b\00311a\00312s\00311e\00310 \00312h\00311a\00310s\00309 \00311b\00310e\00311e\00312n\00310 \00309c\00311o\00312m\00311p\00310r\00311o\00312m\00309i\00310s\00311e\00312d\00311!\00312" }
+      4 { putserv "privmsg $channel :\00308URGENT: Your security is being breached!" }
+      5 { putserv "privmsg $channel :\00309DANGER: Your data is about to be stolen by a cybercriminal!" }
       6 { putserv "privmsg $channel :\00304You\00307'\00308ll \00309be \00310begging \00311for \00312mercy \00311when \00310I\00309'\00308m \00307done \00306with \00305you\00304!" }
       7 { putserv "privmsg $channel :\00304You\00307'\00308ve \00309bitten \00310off \00311more \00312than \00311you \00310can \00309chew\00308!" }
       8 { putserv "privmsg $channel :\00304You\00307'\00308re \00309like \00310a \00311lamb \00312to \00311the \00310slaughter\00308!" }
