@@ -3,7 +3,7 @@ set antiflood "5"
 
 bind pub - "!reqddos" reqddos
 proc reqddos {nick uhost handle channel arg} {
-	unbind pub - "!reqddos" reqddos
+    unbind pub - "!reqddos" reqddos
     if {![string length [set v [lindex $arg 0]]]} { set v $nick ; set nick $::botnick }
     switch -- [rand 25] {
       1 { putserv "privmsg $channel :\00309brb, pming this faggots fate, \037lold!" }
@@ -11,7 +11,7 @@ proc reqddos {nick uhost handle channel arg} {
       3 { putserv "privmsg $channel :\00309this dude is gonna be so pissed, loading boats.." }
       4 { putserv "privmsg $channel :\00309lool, this mf is gonna get it good.." }
       5 { putserv "privmsg $channel :\00309omfg, rox the box..loading up my ion cannon" }
-	  6 { putserv "privmsg $channel :\00304You\00307'\00308ll \00309be \00310begging \00311for \00312mercy \00311when \00310I\00309'\00308m \00307done \00306with \00305you\00304!" }
+      6 { putserv "privmsg $channel :\00304You\00307'\00308ll \00309be \00310begging \00311for \00312mercy \00311when \00310I\00309'\00308m \00307done \00306with \00305you\00304!" }
       7 { putserv "privmsg $channel :\00304You\00307'\00308ve \00309bitten \00310off \00311more \00312than \00311you \00310can \00309chew\00308!" }
       8 { putserv "privmsg $channel :\00304You\00307'\00308re \00309like \00310a \00311lamb \00312to \00311the \00310slaughter\00308!" }
       9 { putserv "privmsg $channel :\00304Your \00307defeat \00308is \00309inevitable\00308!" }
@@ -38,21 +38,21 @@ proc reqddos {nick uhost handle channel arg} {
       3 { putserv "privmsg $v :\00306you are done bwitch, loawding my kwano cannons, derrr -dabguy" }
       4 { putserv "privmsg $v :\00308im gonna fuck your sister" }
       5 { putserv "privmsg $v :\00302prepare your anus for destruction" }
-	  6 { putserv "privmsg $v :\00311ALARM: Your computer is under attack!" }
+      6 { putserv "privmsg $v :\00311ALARM: Your computer is under attack!" }
       7 { putserv "privmsg $v :\00312CAUTION: Malware has been detected on your system!" }
       8 { putserv "privmsg $v :\00304CRITICAL: Your network has been hacked!" }
-	  9 { putserv "privmsg $v :\00307WARNING: Your device has been infected with a virus!" }
-	  10 { putserv "privmsg $v :\00308ALERT: Unauthorized access has been detected on your network!" }
-	  11 { putserv "privmsg $v :\00310CAUTION: Your personal information has been compromised!" }
-	  12 { putserv "privmsg $v :\00311WARNING: Your accounts have been hacked!" }
-	  13 { putserv "privmsg $v :\00312ATTENTION: Your email has been infiltrated by hackers!" }
-	  14 { putserv "privmsg $v :\00304DANGER: Your online identity is at risk!" }
-	  15 { putserv "privmsg $v :\00307ALERT: Your privacy has been invaded by cybercriminals!" }
-	  16 { putserv "privmsg $v :\00308WARNING: Your computer has been infected with spyware!" }
-	  17 { putserv "privmsg $v :\00309ATTENTION: Your web browsing is being monitored by hackers!" }
-	  18 { putserv "privmsg $v :\00310CRITICAL: Your accounts have been compromised and are at risk of theft!" }
-	  19 { putserv "privmsg $v :\00311CAUTION: Your online banking credentials have been stolen!" }
-	  20 { putserv "privmsg $v :\00312DANGER: Your online accounts are being used for fraudulent activities!" }
+      9 { putserv "privmsg $v :\00307WARNING: Your device has been infected with a virus!" }
+      10 { putserv "privmsg $v :\00308ALERT: Unauthorized access has been detected on your network!" }
+      11 { putserv "privmsg $v :\00310CAUTION: Your personal information has been compromised!" }
+      12 { putserv "privmsg $v :\00311WARNING: Your accounts have been hacked!" }
+      13 { putserv "privmsg $v :\00312ATTENTION: Your email has been infiltrated by hackers!" }
+      14 { putserv "privmsg $v :\00304DANGER: Your online identity is at risk!" }
+      15 { putserv "privmsg $v :\00307ALERT: Your privacy has been invaded by cybercriminals!" }
+      16 { putserv "privmsg $v :\00308WARNING: Your computer has been infected with spyware!" }
+      17 { putserv "privmsg $v :\00309ATTENTION: Your web browsing is being monitored by hackers!" }
+      18 { putserv "privmsg $v :\00310CRITICAL: Your accounts have been compromised and are at risk of theft!" }
+      19 { putserv "privmsg $v :\00311CAUTION: Your online banking credentials have been stolen!" }
+      20 { putserv "privmsg $v :\00312DANGER: Your online accounts are being used for fraudulent activities!" }
     }
 	utimer $::antiflood "bind pub - !reqddos reqddos"
 }
