@@ -8,7 +8,7 @@ set quotes {
     "What do I look like? A nigger?"
     "Please stand back, you must be at least 6ft to take this ride…"
     "Hmmm I lost my brain somewhere… but it looks like I’m in the right company for brain dead morons"
-    "You know team , hacking the Gibson is much like sitting in your moms basement packeting chicks"
+    "You know team, hacking the Gibson is much like sitting in your moms basement packeting chicks"
     "I was looking for my panties but all I see is basement dwellers"
     "Can someone turn the lights on please I feel something in my ass… "
     "Hookers n Blow, now that would be a Merry Sniffmas"
